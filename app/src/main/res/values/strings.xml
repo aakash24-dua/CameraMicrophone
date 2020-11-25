@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Hardware</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="start_button">
+    	Start
+    </string>
+
+    <string name="camera_prompt">
+    	Select the camera
+    </string>
+    <string name="camera_label">
+    	Use the camera to detect motion
+    </string>
+
+    <string name="flash_label">
+    	Activate the flash
+    </string>
+
+    <string name="sms_label">
+    	Send an SMS as alert
+    </string>
+
+    <string name="remote_label">
+    	Send alert data to SecureIt
+    </string>
+
+
+    <array name="select_camera">
+        <item>Front</item>
+        <item>Back</item>
+    </array>
+
+    <array name="accelerometer_sensitivity">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </array>
+
+    <string name="accelerometer_prompt">
+    	Set sensitivity
+    </string>
+
+
+
+</resources>

@@ -1,0 +1,83 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"> 
+
+<RelativeLayout
+	android:layout_width="match_parent"
+	android:layout_margin="20dp"
+	android:layout_height="wrap_content">
+	<RelativeLayout
+	    android:background="@drawable/back"
+		android:id="@+id/camera_options"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" 
+    	android:visibility="gone"
+    	android:paddingLeft="30dp"
+    	android:paddingRight="30dp"
+    	android:layout_marginLeft="20dp"
+    	android:layout_marginRight="20dp">
+    	<CheckBox
+	    	android:id="@+id/flash_check"
+     		android:text="@string/flash_label"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerHorizontal="true"
+        	tools:context=".StartActivity"
+        />  	
+    	<TextView 
+    	    android:id="@+id/camera_prompt"
+    	    android:text="@string/camera_prompt"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:paddingTop="10dp"
+    	    android:layout_below="@id/flash_check"
+    	    />
+    	<Spinner
+    	    android:id="@+id/camera_spinner"
+    	    android:layout_alignParentRight="true"
+    	    android:prompt="@string/camera_prompt"
+    	    android:entries="@array/select_camera"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_below="@id/flash_check"
+    	/>
+    	<TextView 
+    	    android:id="@+id/camera_sensitivity_prompt"
+    	    android:text="@string/accelerometer_prompt"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:paddingTop="10dp"
+    	  	android:layout_below="@id/camera_prompt"
+    	/>
+    	<Spinner
+    	    android:id="@+id/camera_sensitivity_spinner"
+    	    android:layout_alignParentRight="true"
+    	    android:layout_below="@id/camera_spinner"
+    	    android:prompt="@string/accelerometer_prompt"
+    	    android:entries="@array/accelerometer_sensitivity"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_centerHorizontal="true"
+    	/>
+    	    
+	</RelativeLayout>
+
+
+
+	
+
+	
+	<Button 
+	    android:id="@+id/start_button"
+		android:layout_below="@+id/camera_options"
+	    android:text="@string/start_button"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
+</ScrollView>
