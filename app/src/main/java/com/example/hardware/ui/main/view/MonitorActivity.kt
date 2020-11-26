@@ -44,11 +44,11 @@ class MonitorActivity : FragmentActivity() {
         // startService(new Intent(this, UploadService.class));
     }
 
-    internal inner class MonitorAdapter(fm: FragmentManager?) :
+    internal inner class MonitorAdapter(fm: FragmentManager) :
         FragmentPagerAdapter(fm) {
         private var cameraFragment: Fragment? = null
         private var microphoneFragment: Fragment? = null
-        override fun getItem(position: Int): Fragment? {
+        override fun getItem(position: Int): Fragment {
             when (position) {
                 0 -> {
                     if (preferences!!.cameraActivation) {
@@ -65,7 +65,7 @@ class MonitorActivity : FragmentActivity() {
                     return microphoneFragment!!
                 }
             }
-            return null
+            return microphoneFragment!!
         }
 
         override fun getPageTitle(position: Int): CharSequence? {
