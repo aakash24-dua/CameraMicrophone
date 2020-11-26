@@ -118,9 +118,7 @@ class StartActivity : AppCompatActivity() {
             ) else if (sensitivity == SecureItPreferences.HIGH) cameraSensitivity.setSelection(2)
             flashCheck.isChecked = preferences!!.flashActivation
             val camera = preferences!!.camera
-            if (camera == SecureItPreferences.FRONT) selectCameraSpinner.setSelection(0) else selectCameraSpinner.setSelection(
-                1
-            )
+            if (camera == SecureItPreferences.BACK) selectCameraSpinner.setSelection(0)
         }
 
 

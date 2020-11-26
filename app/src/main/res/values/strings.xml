@@ -28,7 +28,6 @@
 
 
     <array name="select_camera">
-        <item>Front</item>
         <item>Back</item>
     </array>
 
